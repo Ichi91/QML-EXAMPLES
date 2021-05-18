@@ -121,13 +121,14 @@ Window {
 
 
         Image {
-        x:10
-        y:150
-        width: 150
-        height: 100
-        source: "file:conejo.jpg" //en el mismo directorio
-
+            id: image1
+            x:100
+            y:150
+            width: 50
+            height: 50
+            source: "file:///D:/Anailys/QML/images/conejo.jpg" //se carga a partir de resourse.qrc
         }
+
 
         Image {
             id: image2
@@ -144,18 +145,19 @@ Window {
             y:150
             width: 150
             height: 100
-            source: "file:///D:/Anailys/QML/images/conejo.jpg" //se carga indicando el directorio completo
+            source: "file:///D:/Anailys/QML/images/img015.jpg" //se carga indicando el directorio completo
                                         //donde se ubica la imagen
         }
-        Image { //REVISAR ERROR
+      /*  Image { //REVISAR ERROR
+
             id: image4
-            x:450
+            x:10
             y:150
             width: 150
             height: 100
-            source: "https://es.wikipedia.org/wiki/Archivo:Oryctolagus_cuniculus_1a.JPG"
+            source: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Oryctolagus_cuniculus_1a.JPG/798px-Oryctolagus_cuniculus_1a.JPG"
                                         //desde la web
-        }
+        }*/
         }
 
 
